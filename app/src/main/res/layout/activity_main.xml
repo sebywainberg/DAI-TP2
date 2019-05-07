@@ -1,104 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <EditText
+        android:id="@+id/TextoNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/botonarranque"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/TextoNombre"
-        />
+        android:onClick="arranque"
+        android:text="ingresar nombre" />
+
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:id="@+id/Boton1"
-            android:src="@drawable/ranoldo"
-            android:scaleType="centerInside"
-            android:tag="0"
-            android:onClick="click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/contador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="50px"
+            android:visibility="invisible" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:textSize="60px"
+            android:id="@+id/msjGana"/>
+
+        <TextView
+            android:id="@+id/jugadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" jugadas"
+            android:textSize="50px"
+            android:visibility="invisible"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
         <ImageButton
+            android:id="@+id/Boton1"
             android:layout_width="125dp"
             android:layout_height="125dp"
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@drawable/ranoldo"
+            android:tag="0"
+            android:visibility="invisible" />
+
+        <ImageButton
             android:id="@+id/Boton2"
-            android:src="@drawable/misse"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
             android:scaleType="centerInside"
+            android:src="@drawable/misse"
             android:tag="1"
-            android:onClick="click"/>
+            android:visibility="invisible" />
 
         <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
             android:id="@+id/Boton3"
-            android:src="@drawable/ranoldo"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
             android:scaleType="centerInside"
+            android:src="@drawable/ranoldo"
             android:tag="2"
-            android:onClick="click"/>
+            android:visibility="invisible" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
             android:id="@+id/Boton4"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
+            android:scaleType="centerInside"
             android:src="@drawable/ranoldo"
-            android:scaleType="centerInside"
             android:tag="3"
-            android:onClick="click"/>
+            android:visibility="invisible" />
+
         <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
             android:id="@+id/Boton5"
-            android:src="@drawable/misse"
-            android:scaleType="centerInside"
-            android:tag="4"
-            android:onClick="click"/>
-        <ImageButton
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:id="@+id/Boton6"
-            android:src="@drawable/misse"
+            android:onClick="click"
             android:scaleType="centerInside"
+            android:src="@drawable/misse"
+            android:tag="4"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/Boton6"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@drawable/misse"
             android:tag="5"
-            android:onClick="click"/>
+            android:visibility="invisible" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:id="@+id/Boton7"
-            android:src="@drawable/misse"
-            android:scaleType="centerInside"
-            android:tag="6"
-            android:onClick="click"/>
-        <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:id="@+id/Boton8"
-            android:src="@drawable/misse"
-            android:scaleType="centerInside"
-            android:tag="7"
-            android:onClick="click"/>
-        <ImageButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:id="@+id/Boton9"
-            android:src="@drawable/ranoldo"
-            android:scaleType="centerInside"
-            android:tag="8"
-            android:onClick="click"/>
-    </LinearLayout>
 
+        <ImageButton
+            android:id="@+id/Boton7"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@drawable/misse"
+            android:tag="6"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/Boton8"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@drawable/misse"
+            android:tag="7"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/Boton9"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@drawable/ranoldo"
+            android:tag="8"
+            android:visibility="invisible" />
+    </LinearLayout>
 
 </LinearLayout>
